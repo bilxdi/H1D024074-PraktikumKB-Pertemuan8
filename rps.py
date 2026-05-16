@@ -56,3 +56,6 @@ history = model.fit(
 
 val_loss, val_acc = model.evaluate(validation_generator)
 print(f'Validation loss: {val_loss}, Validation accuracy: {val_acc}')
+
+predictions = model.predict(validation_generator)
+print(predictions) # Output berupa probabilitas prediksi tiap kelas
