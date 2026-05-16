@@ -53,3 +53,6 @@ history = model.fit(
     validation_data=validation_generator,
     epochs=10
 )
+
+val_loss, val_acc = model.evaluate(validation_generator)
+print(f'Validation loss: {val_loss}, Validation accuracy: {val_acc}')
